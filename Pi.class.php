@@ -58,9 +58,6 @@ class Pi{
 		if(!$this->k || !$this->scale || $this->k<1 || $this->scale<1){
 			throw new Exception("\$k and \$scale must be set!");
 		}
-		if(!$this->k || !$this->scale || $this->k<1 || $this->scale<1){
-			throw new Exception("\$k and \$scale must be set!");
-		}
 		$div_2 = 0;
 		for($i=0; $i<=$this->k; $i++){
 			$div_2 = bcadd($this->factorial($i)/($this->doublefactorial(2*$i+1)), $div_2, $this->scale);
